@@ -1,0 +1,6 @@
+netmon-env
+netmon-env/
+/netmon-env
+
+build
+netmon.egg-info
