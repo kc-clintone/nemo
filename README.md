@@ -1,4 +1,4 @@
-# Netmon Network Tool Documentation
+# Nemo Network Tool Documentation
 
 Welcome to the documentation for the Network Tool, an advanced network scanning and monitoring CLI tool.
 
