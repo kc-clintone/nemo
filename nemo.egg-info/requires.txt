@@ -1,0 +1,5 @@
+psutil
+pyfiglet
+python-nmap
+scapy
+termcolor
