@@ -71,4 +71,128 @@ Ensure you have the following installed on your system:
 Run the main script to access Nemo's functionalities:
 ```sh
 nemo <command> [<args>]
+```
 
+#### Ping Sweep
+
+Perform a ping sweep to identify active devices on a network.
+```sh
+nemo p -i <ip-range>
+```
+Example:
+```sh
+nemo p -i 192.168.1.0/24
+```
+
+#### Port Scan
+
+Perform a port scan on a specified IP address and port range.
+```sh
+nemo ps -i <ip> -r <range>
+```
+Example:
+```sh
+nemo ps -i 127.0.0.1 -r 20-80
+```
+
+#### Advanced Scan
+
+Perform a detailed port scan with service version detection.
+```sh
+nemo a -i <ip> -r <range> -sV
+```
+Example:
+```sh
+nemo a -i 127.0.0.1 -r 20-80 -sV
+```
+
+#### Bandwidth Monitoring
+
+Monitor bandwidth usage on a specified network interface.
+```sh
+nemo b -i <interface>
+```
+Example:
+```sh
+nemo b -i eth0
+```
+
+#### Latency Measurement
+
+Measure latency to a specified host.
+```sh
+nemo l -H <host>
+```
+Example:
+```sh
+nemo l -H google.com
+```
+
+#### Alert System
+
+Send an alert with a specified message.
+```sh
+nemo al -m <message>
+```
+Example:
+```sh
+nemo al -m "Network down!"
+```
+
+#### Report Generation
+
+Generate a report for a specified scan type.
+```sh
+nemo r -t <type>
+```
+Example:
+```sh
+nemo r -t ping
+```
+
+## Architecture
+
+Nemo's architecture consists of several modules that work together to provide comprehensive network scanning and monitoring functionalities. The main components are:
+
+- **Scanners:** Modules for performing ping sweeps, port scans, and advanced scans.
+- **Monitors:** Modules for monitoring bandwidth usage and measuring latency.
+- **Alerts:** A system for sending alerts based on predefined conditions.
+- **Reports:** A system for generating detailed reports based on scan results.
+
+## Technologies Used
+
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Backend:** Python 3.8+
+- **Libraries:** `argparse`, `subprocess`, `termcolor`, `pyfiglet`
+- **Tools:** `python-nmap` for network scanning
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+    ```sh
+    git checkout -b feature/your-feature
+    ```
+3. Commit your changes:
+    ```sh
+    git commit -m 'Add your feature'
+    ```
+4. Push to the branch:
+    ```sh
+    git push origin feature/your-feature
+    ```
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](MIT) file for details.
+
+## Contact
+
+Created by [Kaysee](www.linkedin.com/in/clinton-otieno) - feel free to contact me!
+
+- LinkedIn: [linkedin](www.linkedin.com/in/clinton-otieno)
+- GitHub: [github](www.github.com/kc-clintone)
+- Twitter: [twitter](www.twitter.com/kc_clintone)
