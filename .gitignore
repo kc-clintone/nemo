@@ -3,4 +3,4 @@ nemo-env
 /nemo-env
 
 build
-netmon.egg-info
+nemo.egg-info
